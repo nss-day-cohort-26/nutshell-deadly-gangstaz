@@ -1,0 +1,1 @@
+//displays friends on DOM and requires from friends component
