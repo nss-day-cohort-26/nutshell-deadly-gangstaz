@@ -1,17 +1,24 @@
+const navBar = require("../navbar/navbar");
+
 // handlers click events from navbar items
-const eventList = document.querySelector("#eventContainer");
-eventList.addEventListener("click", () => {
-console.log("things happened")
+const eventBtn = document.querySelector("#eventBtn");
+eventBtn.addEventListener("click", () => {
+console.log("event works")
 })
-const taskList = document.querySelector("#taskContainer");
-taskList.addEventListener("click", () => {
+const taskbtn = document.querySelector("#taskBtn");
+taskbtn.addEventListener("click", () => {
+    console.log("task works");
 })
-const articleList = document.querySelector("#articleContainer");
-articleList.addEventListener("click", () => {
+const articleBtn = document.querySelector("#articleBtn");
+articleBtn.addEventListener("click", () => {
+    console.log("article works")
 })
-const friendList = document.querySelector("#friendContainer");
-friendList.addEventListener("click", () => {
+const friendBtn = document.querySelector("#friendBtn");
+friendBtn.addEventListener("click", () => {
+    console.log("friend works")
 })
-// const loginList = document.querySelector("#loginContainer");
-// loginList.addEventListener("click", () => {
-// })
+
+const loginBtn = document.querySelector("#loginBtn");
+loginBtn.addEventListener("click", () => {
+    console.log("login works");
+})
