@@ -13,3 +13,16 @@
 // save article btn
 // delete article btn
 // remove article btn removes from saved database
+
+
+const createButton = Object.create({}, {
+  newButton: {
+    value: (id, text) => {
+      let buttonElement = document.createElement("button");
+      buttonElement.id = id;
+      buttonElement.textContent = text;
+
+      return buttonElement;
+    }
+  }
+})
