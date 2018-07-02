@@ -26,3 +26,5 @@ const createButton = Object.create({}, {
     }
   }
 })
+
+module.exports = createButton;

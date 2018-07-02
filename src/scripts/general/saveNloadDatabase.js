@@ -122,3 +122,5 @@ const Database = Object.create({}, {
     }
   }
 })
+
+module.exports = Database;
