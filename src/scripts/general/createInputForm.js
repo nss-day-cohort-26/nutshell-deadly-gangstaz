@@ -51,10 +51,10 @@ const createInputForms = Object.create({}, {
       urlInput.name = "url"
 
       // const submitButton = document.createElement("button")
-      formElement.appendChild(titleInput)
-      formElement.appendChild(summaryInput)
-      formElement.appendChild(urlInput)
-      articleContainter.appendChild(formElement)
+      // formElement.appendChild(titleInput)
+      // formElement.appendChild(summaryInput)
+      // formElement.appendChild(urlInput)
+      // articleContainter.appendChild(formElement)
     }
   },
   eventForm: {
@@ -81,10 +81,10 @@ const createInputForms = Object.create({}, {
       locationInput.name = "url"
 
       // const submitButton = document.createElement("button")
-      eventElement.appendChild(nameInput)
-      eventElement.appendChild(dateInput)
-      eventElement.appendChild(locationInput)
-      eventContainer.appendChild(eventElement)
+      // eventElement.appendChild(nameInput)
+      // eventElement.appendChild(dateInput)
+      // eventElement.appendChild(locationInput)
+      // eventContainer.appendChild(eventElement)
     }
   },
   loginLogout: {
@@ -103,8 +103,8 @@ const createInputForms = Object.create({}, {
       passwordInput.value = "password"
       passwordInput.type = "text"
       passwordInput.name = "password"
-      loginLogoutElement.appendChild(usernameInput)
-      loginLogoutElement.appendChild(passwordInput)
+      // loginLogoutElement.appendChild(usernameInput)
+      // loginLogoutElement.appendChild(passwordInput)
       return loginLogoutElement
     }
 
@@ -119,8 +119,8 @@ const createInputForms = Object.create({}, {
       taskInput.value = "task"
       taskInput.type = "text"
       taskInput.name = "task"
-      taskForm.appendChild(taskInput)
-      taskContainter.appendChild(taskForm)
+      // taskForm.appendChild(taskInput)
+      // taskContainter.appendChild(taskForm)
 
     }
   },
@@ -137,9 +137,9 @@ const createInputForms = Object.create({}, {
       let dataListElement = document.createElement("datalist");
       dataListElement.id = "friendSearch";
       // creates input element
-      friendInput.appendChild(dataListElement);
-      formElement.appendChild(friendInput);
-      friendContainter.appendChild(formElement)
+      // friendInput.appendChild(dataListElement);
+      // formElement.appendChild(friendInput);
+      // friendContainter.appendChild(formElement)
       // **need to add <option> element
     }
   }
