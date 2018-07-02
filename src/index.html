@@ -1,13 +1,73 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Deadly Gangstaz</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 </head>
+
 <body>
-  <nav id="navBar" class="navbar is-success"></nav>
+  <nav id="navBar" class="navbar is-success">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#">
+          <b>
+            Nutshell
+          </b>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">
+            Add
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a id="friendBtn" class="navbar-item" href="#">
+              Friend
+            </a>
+            <hr class="navbar-divider">
+            <a id="articleBtn" class="navbar-item" href="#">
+              Article
+            </a>
+            <a id="eventBtn" class="navbar-item" href="#">
+              Event
+            </a>
+            <a id="taskBtn" class="navbar-item" href="#">
+              Task
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a id="loginBtn" class="bd-tw-button button is-link" href="#">
+                Login
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+  </nav>
+
+  <div class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Modal title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section  class="modal-card-body">
+        <div id="addFormModal"></div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
 
   <br>
 
@@ -21,4 +81,5 @@
   </div>
   <script src="./bundle.js"></script>
 </body>
+
 </html>
