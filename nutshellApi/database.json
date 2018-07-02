@@ -1,0 +1,49 @@
+{
+  "article": [
+    {
+      "id": 0,
+      "title": "",
+      "synopsis": "",
+      "url": "",
+      "dateCreated": "",
+      "userId": 0
+    }
+  ],
+  "user": [
+    {
+      "id": 0,
+      "articleId": "",
+      "eventId": "",
+      "taskId": "",
+      "friendId": "",
+      "name": "",
+      "email": "",
+      "password": ""
+    }
+  ],
+  "event": [
+    {
+      "id": "",
+      "userId": 0,
+      "name": "",
+      "date": "",
+      "location": "",
+      "dateCreated": ""
+    }
+  ],
+  "task": [
+    {
+      "id": 0,
+      "name": "",
+      "dueDate": 0,
+      "dateCompleted": 0,
+      "userId": 0
+    }
+  ],
+  "friend": [
+    {
+      "id": 0,
+      "userId": 0
+    }
+  ]
+}
