@@ -20,11 +20,13 @@
 // 1 input field and button
 
 // login to include: ->>>>
-// 2 input fields and a button
+// 2 input fields and a buttonns
 const articleContainter = document.querySelector("#articleContainer")
 const friendContainter = document.querySelector("#friendContainer")
 const taskContainter = document.querySelector("#taskContainer")
 const eventContainter = document.querySelector("#eventContainer")
+
+let modalSection = document.getElementById("addFormModal");
 
 const createInputForms = Object.create({}, {
   articleForm: {
@@ -50,11 +52,16 @@ const createInputForms = Object.create({}, {
       urlInput.type = "url"
       urlInput.name = "url"
 
+      formElement.appendChild(titleInput)
+      formElement.appendChild(summaryInput)
+      formElement.appendChild(urlInput)
+
+      console.log(formElement);
+
+      return formElement;
+
       // const submitButton = document.createElement("button")
-      // formElement.appendChild(titleInput)
-      // formElement.appendChild(summaryInput)
-      // formElement.appendChild(urlInput)
-      // articleContainter.appendChild(formElement)
+
     }
   },
   eventForm: {
@@ -79,6 +86,7 @@ const createInputForms = Object.create({}, {
       locationInput.value = "url"
       locationInput.type = "url"
       locationInput.name = "url"
+      return eventElement
 
       // const submitButton = document.createElement("button")
       // eventElement.appendChild(nameInput)
@@ -119,6 +127,7 @@ const createInputForms = Object.create({}, {
       taskInput.value = "task"
       taskInput.type = "text"
       taskInput.name = "task"
+      return taskForm;
       // taskForm.appendChild(taskInput)
       // taskContainter.appendChild(taskForm)
 
@@ -136,6 +145,7 @@ const createInputForms = Object.create({}, {
       // creates datalist element
       let dataListElement = document.createElement("datalist");
       dataListElement.id = "friendSearch";
+      return formElement
       // creates input element
       // friendInput.appendChild(dataListElement);
       // formElement.appendChild(friendInput);
@@ -145,8 +155,10 @@ const createInputForms = Object.create({}, {
   }
 })
 
-createInputForms.articleForm()
-createInputForms.friendForm()
-createInputForms.taskForm()
-createInputForms.loginLogout()
-createInputForms.eventForm()
+// createInputForms.articleForm()
+// createInputForms.friendForm()
+// createInputForms.taskForm()
+// createInputForms.loginLogout()
+// createInputForms.eventForm()
+
+module.exports = createInputForms;

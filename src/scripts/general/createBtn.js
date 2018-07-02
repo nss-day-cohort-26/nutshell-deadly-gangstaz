@@ -27,4 +27,8 @@ const createButton = Object.create({}, {
   }
 })
 
+<<<<<<< HEAD
 module.exports = createButton;
+=======
+module.exports = createButton;
+>>>>>>> master
