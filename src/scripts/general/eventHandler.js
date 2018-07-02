@@ -1,5 +1,3 @@
-const navBar = require("../navbar/navbar");
-
 // handlers click events from navbar items
 const eventBtn = document.querySelector("#eventBtn");
 eventBtn.addEventListener("click", () => {
