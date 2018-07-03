@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // const createInputForm = require("../general/createInputForm")
 
 // let modalDiv = document.getElementById("addFormModal");
@@ -8,8 +7,7 @@
 //     modalDiv.appendChild(createInputForm.articleForm());
 // };
 // module.exports = displayArticleModal
-=======
-{/* <div class="modal">
+/* <div class="modal">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
@@ -24,5 +22,4 @@
       <button class="button">Cancel</button>
     </footer>
   </div>
-</div> */}
->>>>>>> master
+</div> */
