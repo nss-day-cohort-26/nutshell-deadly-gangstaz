@@ -19,7 +19,7 @@ const inputValues = Object.create({}, {
   taskValue: {
     value: () => {
       let taskName = document.querySelector("#taskName").value
-      let taskDueDate = document.querySelector("#taskDueDate")
+      let taskDueDate = document.querySelector("#taskDueDate").value
       console.log(taskName)
     }
   },
