@@ -94,6 +94,7 @@ taskbtn.addEventListener("click", () => { // adds click event to button
         <section class="modal-card-body has-text-centered">
             <form>
                 <p>Name:</p><input id="taskName" type="text"></input>
+                <p>Due Date:</p><input id="taskDueDate" type="text"></input>
             </form>
         </section>
         <footer class="modal-card-foot buttons is-centered">
@@ -149,32 +150,32 @@ friendBtn.addEventListener("click", () => { // adds click event to button
     });
 });
 
-const loginBtn = document.querySelector("#loginBtn"); // queries login button in index.html
-loginBtn.addEventListener("click", () => { // adds click event to button
+const registerBtn = document.querySelector("#registerBtn"); // queries login button in index.html
+registerBtn.addEventListener("click", () => { // adds click event to button
     // sets the text to be included in modal
     modal.innerHTML = `
     <div class="modal-background has-text-centered"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title has-text-centered">Login</p>
+          <p class="modal-card-title has-text-centered">Register</p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body has-text-centered">
             <form>
-                <p>Email:</p><input id="loginEmail" type="email"></input>
-                <p>Password:</p><input id="loginPassword" type="password"></input>
+                <p>Email:</p><input id="registerEmail" type="email"></input>
+                <p>Password:</p><input id="registerPassword" type="password"></input>
             </form>
         </section>
         <footer class="modal-card-foot buttons is-centered">
-          <button id="addLoginBtn" class="button is-link">Log In</button>
+          <button id="RegisterBtn" class="button is-link">Register</button>
         </footer>
       </div>
     `;
 
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
-    const addLoginBtn = document.getElementById("addLoginBtn"); // queries addLoginBtn located in modal.innerHTML. User will select value in dropdown and use this button to submit data
-    addLoginBtn.addEventListener("click", () => {}); // pass in function that will get select option values and PUT data into database
+    const RegisterBtn = document.getElementById("RegisterBtn"); // queries addLoginBtn located in modal.innerHTML. User will select value in dropdown and use this button to submit data
+    RegisterBtn.addEventListener("click", inputValues.registerValue); // pass in function that will get select option values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
