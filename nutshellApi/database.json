@@ -1,12 +1,10 @@
 {
   "article": [
     {
-      "id": 0,
-      "title": "",
-      "synopsis": "",
-      "url": "",
-      "dateCreated": "",
-      "userId": 0
+      "title": "Austin",
+      "summary": "Yeah",
+      "url": "qqqq.asdfasdf",
+      "id": 1
     }
   ],
   "user": [
@@ -23,12 +21,10 @@
   ],
   "event": [
     {
-      "id": "",
-      "userId": 0,
-      "name": "",
-      "date": "",
-      "location": "",
-      "dateCreated": ""
+      "name": "Austin",
+      "date": "2018-12-30",
+      "location": "asdfasdf",
+      "id": 1
     }
   ],
   "task": [
