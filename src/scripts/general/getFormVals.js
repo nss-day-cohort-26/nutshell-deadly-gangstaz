@@ -8,10 +8,10 @@ const inputValues = Object.create({}, {
       const articleSummary = document.querySelector("#articleSummary").value
       const articleUrl = document.querySelector("#articleUrl").value
       saveNLoad.postArticle(articleTitle, articleSummary, articleUrl)
-      .then(response => {
-        console.log(response)
-      })
-  }
+        .then(response => {
+          console.log(response)
+        })
+    }
   },
   eventValue: {
     value: () => {
@@ -27,6 +27,7 @@ const inputValues = Object.create({}, {
   taskValue: {
     value: () => {
       let taskName = document.querySelector("#taskName").value
+      let taskDueDate = document.querySelector("#taskDueDate").value
       saveNLoad.postTask(taskName, taskDueDate)
         .then(response => {
           console.log(response)
@@ -39,11 +40,11 @@ const inputValues = Object.create({}, {
       console.log(searchResult)
     }
   },
-  loginValue: {
+  registerValue: {
     value: () => {
-      let loginEmail = document.querySelector("#loginEmail").value
-      let loginPassword = document.querySelector("#loginPassword").value
-      console.log(loginEmail, loginPassword)
+      let registerEmail = document.querySelector("#registerEmail").value
+      let registerPassword = document.querySelector("#registerPassword").value
+      console.log(registerEmail, registerPassword)
     }
   },
 })
