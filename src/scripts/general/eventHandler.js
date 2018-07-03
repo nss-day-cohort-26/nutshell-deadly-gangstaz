@@ -1,4 +1,5 @@
 // handles click events from navbar items
+let inputValues = require("./getFormVals")
 
 const modal = document.querySelector(".modal"); // queries modal container in index.html
 
@@ -38,7 +39,7 @@ articleBtn.addEventListener("click", () => { // adds click event to button
 
     const addArticleBtn = document.getElementById("addArticleBtn"); // queries addArticleBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
 
-    addArticleBtn.addEventListener("click", getArticleVal); // pass in function that will get input values and PUT data into database
+    addArticleBtn.addEventListener("click", inputValues.articleValue); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
@@ -72,7 +73,7 @@ eventBtn.addEventListener("click", () => { // adds click event to button
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
     const addEventBtn = document.getElementById("addEventBtn"); // queries addEventBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
-    addEventBtn.addEventListener("click", () => {}); // pass in function that will get input values and PUT data into database
+    addEventBtn.addEventListener("click", inputValues.eventValue); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
@@ -104,7 +105,7 @@ taskbtn.addEventListener("click", () => { // adds click event to button
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
     const addTaskBtn = document.getElementById("addTaskBtn"); // queries addTaskBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
-    addTaskBtn.addEventListener("click", () => {}); // pass in function that will get input values and PUT data into database
+    addTaskBtn.addEventListener("click", inputValues.taskValue); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
@@ -124,7 +125,7 @@ friendBtn.addEventListener("click", () => { // adds click event to button
         </header>
         <section class="modal-card-body has-text-centered">
             <p>Select a Friend!</p>
-            <select>
+            <select id= "friendDropDown">
                 <option>Sathvik Reddy</option>
                 <option>Natasha Cox</option>
                 <option>Austin Gorman</option>
