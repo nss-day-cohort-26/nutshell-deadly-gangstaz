@@ -1,3 +1,5 @@
+const saveNLoad = require("./saveNloadDatabase")
+
 
 const inputValues = Object.create({}, {
   articleValue: {
@@ -5,21 +7,30 @@ const inputValues = Object.create({}, {
       const articleTitle = document.querySelector("#articleTitle").value
       const articleSummary = document.querySelector("#articleSummary").value
       const articleUrl = document.querySelector("#articleUrl").value
-      console.log(articleTitle)
-    }
+      saveNLoad.postArticle(articleTitle, articleSummary, articleUrl)
+      .then(response => {
+        console.log(response)
+      })
+  }
   },
   eventValue: {
     value: () => {
       let eventName = document.querySelector("#eventTitle").value
       let eventDate = document.querySelector("#eventDate").value
       let eventLocation = document.querySelector("#eventLocation").value
-      console.log(eventName)
+      saveNLoad.postEvent(eventName, eventDate, eventLocation)
+        .then(response => {
+          console.log(response)
+        })
     }
   },
   taskValue: {
     value: () => {
       let taskName = document.querySelector("#taskName").value
-      console.log(taskName)
+      saveNLoad.postTask(taskName, taskDueDate)
+        .then(response => {
+          console.log(response)
+        })
     }
   },
   searchValue: {

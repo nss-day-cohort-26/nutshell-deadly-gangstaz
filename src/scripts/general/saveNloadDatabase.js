@@ -36,10 +36,15 @@ const Database = Object.create({}, {
     },
   },
   postArticle: {
-    value: () => {
+    value: (articleTitle, articleSummary, articleUrl) => {
       return $.ajax({
         url: "http://localhost:3000/article",
-        method: "POST"
+        method: "POST",
+        data: {
+          title: articleTitle,
+          summary: articleSummary,
+          url: articleUrl,
+        }
       })
     }
   },
@@ -61,7 +66,11 @@ const Database = Object.create({}, {
     value: () => {
       return $.ajax({
         url: "http://localhost:3000/task",
-        method: "POST"
+        method: "POST",
+        data: {
+          name: taskName,
+          dueDate: taskDueDate,
+        }
       })
     }
   },
@@ -101,10 +110,15 @@ const Database = Object.create({}, {
     },
   },
   postEvent: {
-    value: () => {
+    value: (eventName, eventDate, eventLocation) => {
       return $.ajax({
         url: "http://localhost:3000/event",
-        method: "POST"
+        method: "POST",
+        data: {
+          name: eventName,
+          date: eventDate,
+          location: eventLocation
+        }
       })
     },
   },
