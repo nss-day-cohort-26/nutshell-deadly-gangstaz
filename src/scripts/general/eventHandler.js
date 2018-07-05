@@ -94,7 +94,7 @@ taskbtn.addEventListener("click", () => { // adds click event to button
         <section class="modal-card-body has-text-centered">
             <form>
                 <p>Name:</p><input id="taskName" type="text"></input>
-                <p>Due Date:</p><input id="taskDueDate" type="text"></input>
+                <p>Due Date:</p><input id="taskDueDate" type="date"></input>
             </form>
         </section>
         <footer class="modal-card-foot buttons is-centered">
