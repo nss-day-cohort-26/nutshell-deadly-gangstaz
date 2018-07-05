@@ -34,10 +34,9 @@ const inputValues = Object.create({}, {
         })
     }
   },
-  searchValue: {
+  friendValue: {
     value: () => {
       let searchResult = document.querySelector("#friendDropDown").value
-      console.log(searchResult)
     }
   },
   registerValue: {

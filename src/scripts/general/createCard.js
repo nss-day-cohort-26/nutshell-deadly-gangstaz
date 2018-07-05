@@ -55,9 +55,6 @@ const CreateCard = Object.create({}, {
             let locationEl = document.createElement("h2");
             locationEl.textContent = location;
 
-            let submitBtn = document.createElement("button");
-            submitBtn.textContent = "Submit";
-
             let editBtn = document.createElement("button");
             editBtn.textContent = "Edit";
 
@@ -65,7 +62,7 @@ const CreateCard = Object.create({}, {
             card.appendChild(nameEl);
             card.appendChild(dateEl);
             card.appendChild(locationEl);
-            card.appendChild(submitBtn);
+            card.appendChild(removeBtn);
             card.appendChild(editBtn);
 
             eventContainer.appendChild(card);
