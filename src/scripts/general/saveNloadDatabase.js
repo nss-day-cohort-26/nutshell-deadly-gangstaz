@@ -63,7 +63,7 @@ const Database = Object.create({}, {
     }
   },
   postTask: {
-    value: () => {
+    value: (taskName, taskDueDate) => {
       return $.ajax({
         url: "http://localhost:3000/task",
         method: "POST",
