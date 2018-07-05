@@ -59,7 +59,7 @@ const Database = Object.create({}, {
   // TASK data ---------->
   getTask: {
     value: () => {
-      return $.ajax("http://localhost:3000/article");
+      return $.ajax("http://localhost:3000/task");
     }
   },
   postTask: {
