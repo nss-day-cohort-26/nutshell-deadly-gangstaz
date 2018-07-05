@@ -1,16 +1,8 @@
 // handles click events from navbar items
-let inputValues = require("./getFormVals")
+
+const valueAndList = require("./valueAndList");
 
 const modal = document.querySelector(".modal"); // queries modal container in index.html
-
-const getArticleVal = () => {
-    let articleTitle = document.getElementById("articleTitle").value;
-    let articleSummary = document.getElementById("articleSummary").value;
-    let articleUrl = document.getElementById("articleUrl").value;
-    console.log("Title:", articleTitle);
-    console.log("Summary:", articleSummary);
-    console.log("Link:", articleUrl);
-}
 
 const articleBtn = document.querySelector("#articleBtn"); // queries article button in index.html
 articleBtn.addEventListener("click", () => { // adds click event to button
@@ -39,7 +31,7 @@ articleBtn.addEventListener("click", () => { // adds click event to button
 
     const addArticleBtn = document.getElementById("addArticleBtn"); // queries addArticleBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
 
-    addArticleBtn.addEventListener("click", inputValues.articleValue); // pass in function that will get input values and PUT data into database
+    addArticleBtn.addEventListener("click", valueAndList.articleValueAndList); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
@@ -73,7 +65,7 @@ eventBtn.addEventListener("click", () => { // adds click event to button
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
     const addEventBtn = document.getElementById("addEventBtn"); // queries addEventBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
-    addEventBtn.addEventListener("click", inputValues.eventValue); // pass in function that will get input values and PUT data into database
+    addEventBtn.addEventListener("click", valueAndList.eventValueAndList); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
@@ -106,7 +98,7 @@ taskbtn.addEventListener("click", () => { // adds click event to button
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
     const addTaskBtn = document.getElementById("addTaskBtn"); // queries addTaskBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
-    addTaskBtn.addEventListener("click", inputValues.taskValue); // pass in function that will get input values and PUT data into database
+    addTaskBtn.addEventListener("click", valueAndList.taskValueAndList); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
@@ -142,7 +134,7 @@ friendBtn.addEventListener("click", () => { // adds click event to button
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
     const addFriendBtn = document.getElementById("addFriendBtn"); // queries addFriendBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
-    addFriendBtn.addEventListener("click", () => {}); // pass in function that will get input values and PUT data into database
+    addFriendBtn.addEventListener("click", valueAndList.friendValueAndList); // pass in function that will get input values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button

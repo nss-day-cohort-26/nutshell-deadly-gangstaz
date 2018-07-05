@@ -7,9 +7,9 @@
       "id": 1
     },
     {
-      "title": "",
-      "summary": "",
-      "url": "",
+      "title": "Shu",
+      "summary": "Shu is pretty cool",
+      "url": "https://www.theonion.com/",
       "id": 2
     }
   ],
@@ -43,7 +43,8 @@
   "friend": [
     {
       "id": 0,
-      "userId": 0
+      "userId": 0,
+      "name": "Vik"
     }
   ]
 }
