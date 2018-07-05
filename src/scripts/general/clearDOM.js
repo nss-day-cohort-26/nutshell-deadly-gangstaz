@@ -1,7 +1,7 @@
 // clears the dom
 
-const clear = ()  => {
-  const container = document.querySelector("#articleContainer");
+const clear = (containerID)  => {
+  const container = document.querySelector(containerID);
   while (container.firstElementChild) {
     container.removeChild(container.firstElementChild)
   };
