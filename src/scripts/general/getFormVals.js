@@ -42,9 +42,13 @@ const inputValues = Object.create({}, {
   },
   registerValue: {
     value: () => {
+      let registerName = document.querySelector("#registerName").value
       let registerEmail = document.querySelector("#registerEmail").value
       let registerPassword = document.querySelector("#registerPassword").value
-      console.log(registerEmail, registerPassword)
+      saveNLoad.postUser(registerName, registerEmail, registerPassword)
+        .then(response => {
+          console.log(registerName, registerEmail, registerPassword)
+        })
     }
   },
 })
