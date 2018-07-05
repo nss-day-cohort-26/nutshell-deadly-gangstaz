@@ -14,6 +14,41 @@
     height: 650px;
   }
 
+  .articleCard {
+    border: 1px solid black;
+    width: auto;
+    height: 110px;
+    text-align: center;
+  }
+
+  .eventCard {
+    border: 1px solid black;
+    width: auto;
+    height: 130px;
+    text-align: center;
+  }
+
+  .taskCard {
+    border: 1px solid black;
+    width: auto;
+    height: 110px;
+    text-align: center;
+  }
+
+  .friendCard {
+    border: 1px solid black;
+    width: auto;
+    height: 50px;
+  }
+
+  .checkBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 130px;
+    vertical-align: middle;
+  }
+
   #eventContainer {
     border: 1px solid black;
     border-radius: 20px;
@@ -27,3 +62,5 @@
     height: 650px;
     margin: 0 20px;
   }
+
+ 
