@@ -2,15 +2,21 @@
 // let saveNloadDatabase = require("./saveNloadDatabase")
 // let createInputForm = require("./createInputForm")
 const clear = require("./clearDOM")
+const saveNLoad = require("./saveNloadDatabase")
+const CardList = require("./cardList");
+
+
+const $ = require("jquery");
 
 const CreateCard = Object.create({}, {
     articleCard: {
-        value: (username, title, summary, url) => {
+        value: (username, id, title, summary, url) => {
             clear
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
             card.setAttribute("class", "articleCard");
+            card.id = id;
 
             let userEl = document.createElement("h3");
             userEl.textContent = username;
@@ -25,6 +31,14 @@ const CreateCard = Object.create({}, {
 
             let removeBtn = document.createElement("button");
             removeBtn.textContent = "Remove";
+            removeBtn.addEventListener("click", () => {
+                let articleId = event.currentTarget.parentNode.id;
+                console.log(articleId);
+                saveNLoad.deleteArticle(articleId)
+                .then(() => {
+                    console.log("revisit this tomorrow");
+                })
+            }),
 
             card.appendChild(userEl);
             card.appendChild(titleEl);
@@ -63,7 +77,6 @@ const CreateCard = Object.create({}, {
             card.appendChild(nameEl);
             card.appendChild(dateEl);
             card.appendChild(locationEl);
-            card.appendChild(removeBtn);
             card.appendChild(editBtn);
 
             eventContainer.appendChild(card);

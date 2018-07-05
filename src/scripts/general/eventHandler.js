@@ -160,15 +160,15 @@ registerBtn.addEventListener("click", () => { // adds click event to button
             </form>
         </section>
         <footer class="modal-card-foot buttons is-centered">
-          <button id="registerBtn" class="button is-link">Register</button>
+          <button id="registrationBtn" class="button is-link">Register</button>
         </footer>
       </div>
     `;
 
     modal.classList.add("is-active"); // bulma's modal component is inactive by default. Therefore, in order to activate the modal, you need to add this classname
 
-    const registerBtn = document.getElementById("registerBtn"); // queries addLoginBtn located in modal.innerHTML. User will select value in dropdown and use this button to submit data
-    registerBtn.addEventListener("click", valueAndList.registerValueAndList); // pass in function that will get select option values and PUT data into database
+    const registrationBtn = document.getElementById("registrationBtn"); // queries addLoginBtn located in modal.innerHTML. User will select value in dropdown and use this button to submit data
+    registrationBtn.addEventListener("click", valueAndList.registerValueAndList) // pass in function that will get select option values and PUT data into database
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button
