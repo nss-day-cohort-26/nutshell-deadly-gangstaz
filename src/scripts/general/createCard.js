@@ -1,11 +1,12 @@
 // // include checkbox for task card creator
 // let saveNloadDatabase = require("./saveNloadDatabase")
 // let createInputForm = require("./createInputForm")
-// const Database = require("../../")
+const clear = require("./clearDOM")
 
 const CreateCard = Object.create({}, {
     articleCard: {
         value: (username, title, summary, url) => {
+            clear
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
