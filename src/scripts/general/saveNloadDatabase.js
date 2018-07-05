@@ -9,10 +9,15 @@ const Database = Object.create({}, {
     }
   },
   postUser: {
-    value: () => {
+    value: (name, email, password) => {
       return $.ajax({
         url: "http://localhost:3000/user",
-        method: "POST"
+        method: "POST",
+        data: {
+          name: name,
+          email: email,
+          password: password
+        }
       })
     }
   },

@@ -1,9 +1,10 @@
 // clears the dom
-const clear = (containerId) => {
-  let container = document.querySelector(containerId)
+
+const clear = (containerID)  => {
+  const container = document.querySelector(containerID);
   while (container.firstElementChild) {
     container.removeChild(container.firstElementChild)
-  }
-}
+  };
+};
 
 module.exports = clear;

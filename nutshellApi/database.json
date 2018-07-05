@@ -13,52 +13,46 @@
       "id": 2
     },
     {
-      "title": "asdfa",
-      "summary": "asdjkf",
-      "url": "aslkdjf",
+      "title": "New article",
+      "summary": "this is a new one",
+      "url": "https://www.theonion.com/",
       "id": 3
     },
     {
-      "title": "asfds",
-      "summary": "asdfas",
-      "url": "asdf",
+      "title": "New article",
+      "summary": "this is a new one",
+      "url": "https://www.theonion.com/",
       "id": 4
     },
     {
-      "title": "asdfas",
-      "summary": "asdfa",
-      "url": "asdfasdf",
+      "title": "",
+      "summary": "",
+      "url": "",
       "id": 5
     },
     {
-      "title": "asfdsadjkl",
-      "summary": "asdklfadskl",
-      "url": "kalsjdf",
+      "title": "ojlj",
+      "summary": "lkj",
+      "url": "lkj",
       "id": 6
     },
     {
-      "title": "austin",
-      "summary": "please work",
-      "url": "help",
+      "title": "ljl",
+      "summary": "lkj",
+      "url": "lkj",
       "id": 7
     },
     {
-      "title": "asdfkjsal",
-      "summary": "laksf",
-      "url": "NEW THING",
+      "title": "sgg",
+      "summary": "kh",
+      "url": "kj",
       "id": 8
     },
     {
-      "title": "Jeweeeeel",
-      "summary": "doing things",
-      "url": "www.biz.biz",
+      "title": "hjkjl",
+      "summary": "lkjh",
+      "url": "lkjh",
       "id": 9
-    },
-    {
-      "title": "oh please work",
-      "summary": "now",
-      "url": "hwehjfa",
-      "id": 10
     }
   ],
   "user": [
@@ -81,6 +75,7 @@
       "id": 1
     },
     {
+<<<<<<< HEAD
       "name": "new thing ",
       "date": "",
       "location": "IIIIIIIIIIII",
@@ -90,6 +85,17 @@
       "name": "JEWEL",
       "date": "2018-12-30",
       "location": "ALSJDFLAJSFLJKA;KLJWOEF",
+=======
+      "name": "New Event",
+      "date": "2018-07-17",
+      "location": "Nashville, TN",
+      "id": 2
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+>>>>>>> master
       "id": 3
     }
   ],
@@ -99,6 +105,7 @@
       "dueDate": "2018-07-10",
       "id": 1
     },
+<<<<<<< HEAD
     {
       "name": "HOWEROWW",
       "dueDate": "2018-12-31",
@@ -121,10 +128,18 @@
     }
   ],
   "friend": [
+=======
+>>>>>>> master
     {
-      "id": 0,
-      "userId": 0,
-      "name": "Vik"
+      "name": "Do a projecy",
+      "dueDate": "2018-07-16",
+      "id": 2
+    },
+    {
+      "name": "",
+      "dueDate": "",
+      "id": 3
     }
-  ]
+  ],
+  "friend": []
 }
