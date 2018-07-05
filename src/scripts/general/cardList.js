@@ -7,7 +7,7 @@ const CardList = Object.create({}, {
             saveNload.getArticle()
                 .then(articleData => {
                     for (let i in articleData) {
-                        CreateCard.articleCard("Natasha Cox", articleData[i].title, articleData[i].summary, articleData[i].url);
+                        CreateCard.articleCard("Natasha Cox", articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
                     }
                 })
         }

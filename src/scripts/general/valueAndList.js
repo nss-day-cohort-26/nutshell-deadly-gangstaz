@@ -1,6 +1,7 @@
 let inputValues = require("./getFormVals");
 let CardList = require("./cardList");
 let clear = require("./clearDOM")
+
 const ValueAndList = Object.create({}, {
     articleValueAndList: {
         value: () => {
@@ -25,7 +26,7 @@ const ValueAndList = Object.create({}, {
     },
     registerValueAndList: {
         value: () => {
-            inputValues.friendValue();
+            inputValues.registerValue();
             clear("#friendContainer");
             CardList.friendList();
         }

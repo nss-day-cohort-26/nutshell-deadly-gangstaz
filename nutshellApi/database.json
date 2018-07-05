@@ -1,156 +1,86 @@
 {
   "article": [
     {
-      "title": "Austin",
-      "summary": "Yeah",
-      "url": "qqqq.asdfasdf",
+      "title": "Syria Stuff",
+      "summary": "War in Syria",
+      "url": "www.cnn.com",
       "id": 1
     },
     {
-      "title": "Shu",
-      "summary": "Shu is pretty cool",
-      "url": "https://www.theonion.com/",
+      "title": "u;sadjlf",
+      "summary": ";liasdf",
+      "url": "www.asdf.com",
       "id": 2
-    },
-    {
-      "title": "New article",
-      "summary": "this is a new one",
-      "url": "https://www.theonion.com/",
-      "id": 3
-    },
-    {
-      "title": "New article",
-      "summary": "this is a new one",
-      "url": "https://www.theonion.com/",
-      "id": 4
     },
     {
       "title": "",
       "summary": "",
       "url": "",
-      "id": 5
+      "id": 3
     },
     {
-      "title": "ojlj",
-      "summary": "lkj",
-      "url": "lkj",
-      "id": 6
-    },
-    {
-      "title": "ljl",
-      "summary": "lkj",
-      "url": "lkj",
-      "id": 7
-    },
-    {
-      "title": "sgg",
-      "summary": "kh",
-      "url": "kj",
-      "id": 8
-    },
-    {
-      "title": "hjkjl",
-      "summary": "lkjh",
-      "url": "lkjh",
-      "id": 9
-    },
-    {
-      "title": "blah",
-      "summary": "blah",
-      "url": "www.cnn.com",
-      "id": 10
-    },
-    {
-      "title": "blah",
-      "summary": "blah",
-      "url": "www.cnn.com",
-      "id": 11
+      "title": "sup",
+      "summary": "sujasdf",
+      "url": "www.sup.com",
+      "id": 4
     }
   ],
   "user": [
     {
-      "id": 0,
-      "articleId": "",
-      "eventId": "",
-      "taskId": "",
-      "friendId": "",
-      "name": "",
-      "email": "",
-      "password": ""
+      "name": "Austin fasdf",
+      "email": "austin@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Sathvik Reddy",
+      "email": "sathvik@gmail.com",
+      "password": "321",
+      "id": 2
+    },
+    {
+      "name": "Natasha Cox",
+      "email": "natasha@gmail.com",
+      "password": "123",
+      "id": 3
     }
   ],
   "event": [
     {
-      "name": "Austin",
-      "date": "2018-12-30",
-      "location": "asdfasdf",
+      "name": "NSS Party",
+      "date": "2018-07-12",
+      "location": "Nashville, TN",
       "id": 1
     },
     {
-<<<<<<< HEAD
-      "name": "new thing ",
-      "date": "",
-      "location": "IIIIIIIIIIII",
-      "id": 2
-    },
-    {
-      "name": "JEWEL",
-      "date": "2018-12-30",
-      "location": "ALSJDFLAJSFLJKA;KLJWOEF",
-=======
-      "name": "New Event",
-      "date": "2018-07-17",
+      "name": "This is an event",
+      "date": "2018-07-06",
       "location": "Nashville, TN",
       "id": 2
     },
     {
-      "name": "",
-      "date": "",
-      "location": "",
->>>>>>> master
+      "name": "This is an event",
+      "date": "2018-07-17",
+      "location": "Nashville, TN",
       "id": 3
+    },
+    {
+      "name": "This is an event",
+      "date": "2018-07-10",
+      "location": "Nashville, TN",
+      "id": 4
     }
   ],
   "task": [
     {
       "name": "Do Homework",
-      "dueDate": "2018-07-10",
+      "dueDate": "2018-07-11",
       "id": 1
     },
-<<<<<<< HEAD
     {
-      "name": "HOWEROWW",
-      "dueDate": "2018-12-31",
+      "name": "do stuff",
+      "dueDate": "2018-07-17",
       "id": 2
-    },
-    {
-      "name": "HOWEROWW",
-      "dueDate": "2018-12-31",
-      "id": 3
-    },
-    {
-      "name": "HOWEROWW",
-      "dueDate": "2018-12-31",
-      "id": 4
-    },
-    {
-      "name": "HOWEROWW",
-      "dueDate": "2018-12-31",
-      "id": 5
-    }
-  ],
-  "friend": [
-=======
->>>>>>> master
-    {
-      "name": "Do a projecy",
-      "dueDate": "2018-07-16",
-      "id": 2
-    },
-    {
-      "name": "",
-      "dueDate": "",
-      "id": 3
     }
   ],
   "friend": []
