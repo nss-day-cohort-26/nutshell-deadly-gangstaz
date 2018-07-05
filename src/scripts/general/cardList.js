@@ -34,7 +34,7 @@ const CardList = Object.create({}, {
     },
     friendList: {
         value: () => {
-            saveNload.getFriend()
+            saveNload.getUser()
                 .then(friendData => {
                     for (let i in friendData) {
                         CreateCard.friendCard(friendData[i].name);

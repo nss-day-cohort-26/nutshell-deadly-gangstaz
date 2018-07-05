@@ -20,9 +20,9 @@ const ValueAndList = Object.create({}, {
             CardList.taskList();
         }
     },
-    friendValueAndList: {
+    registerValueAndList: {
         value: () => {
-            inputValues.friendValue();
+            inputValues.registerValue();
             CardList.friendList();
         }
     }
