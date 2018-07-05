@@ -23,7 +23,7 @@ const ValueAndList = Object.create({}, {
             CardList.taskList();
         }
     },
-    friendValueAndList: {
+    registerValueAndList: {
         value: () => {
             inputValues.friendValue();
             clear("#friendContainer");
