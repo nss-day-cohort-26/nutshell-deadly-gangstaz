@@ -36,10 +36,6 @@ const inputValues = Object.create({}, {
   friendValue: {
     value: () => {
       let searchResult = document.querySelector("#friendDropDown").value;
-      saveNLoad.postFriend(friendName)
-      .then(response => {
-        console.log(response);
-      })
     }
   },
   registerValue: {

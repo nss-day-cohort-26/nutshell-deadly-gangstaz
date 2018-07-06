@@ -13,6 +13,7 @@ const ValueAndList = Object.create({}, {
     },
     eventValueAndList: {
         value: () => {
+            console.log("something different")
             inputValues.eventValue();
             clear("#eventContainer");
             CardList.eventList();
@@ -29,11 +30,14 @@ const ValueAndList = Object.create({}, {
         value: () => {
             inputValues.registerValue();
             clear("#friendContainer");
-            CardList.friendList();
+            // CardList.friendList();
         }
     },
     friendValueAndList: {
         value: () => {
+            inputValues.friendValue();
+            clear("#friendContainer");
+            CardList.friendList();
         }
     }
 })
