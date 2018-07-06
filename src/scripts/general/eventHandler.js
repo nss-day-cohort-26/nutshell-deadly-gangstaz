@@ -118,12 +118,7 @@ friendBtn.addEventListener("click", () => { // adds click event to button
         </header>
         <section class="modal-card-body has-text-centered">
             <p>Select a Friend!</p>
-            <select id= "friendDropDown">
-                <option>Sathvik Reddy</option>
-                <option>Natasha Cox</option>
-                <option>Austin Gorman</option>
-                <option>Jewel Ramirez</option>
-            </select>
+            <select id="friendDropDown"></select>
         </section>
         <footer class="modal-card-foot buttons is-centered">
           <button id="addFriendBtn" class="button is-link">Add Friend</button>
