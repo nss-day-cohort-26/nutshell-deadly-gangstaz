@@ -1,11 +1,13 @@
 const saveNload = require("../general/saveNloadDatabase");
 const CreateCard = require("../general/createCard");
+const clear = require("./clearDOM")
 
 const CardList = Object.create({}, {
     articleList: {
         value: () => {
             saveNload.getArticle()
                 .then(articleData => {
+                    clear("#articleContainer")
                     for (let i in articleData) {
                         CreateCard.articleCard("Natasha Cox", articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
                     }
@@ -16,6 +18,7 @@ const CardList = Object.create({}, {
         value: () => {
             saveNload.getEvent()
                 .then(eventData => {
+                    clear("#eventContainer")
                     for (let i in eventData) {
                         CreateCard.eventCard("Austin Gorman",eventData[i].name, eventData[i].date, eventData[i].location);
                     }
@@ -26,6 +29,7 @@ const CardList = Object.create({}, {
         value: () => {
             saveNload.getTask()
                 .then(taskData => {
+                    clear("#taskContainer")
                     for (let i in taskData) {
                         CreateCard.taskCard("Jewel Ramirez",taskData[i].name, taskData[i].dueDate);
                     }
@@ -36,6 +40,7 @@ const CardList = Object.create({}, {
         value: () => {
             saveNload.getUser()
                 .then(friendData => {
+                    clear("#friendContainer")
                     for (let i in friendData) {
                         CreateCard.friendCard(friendData[i].name);
                     }
