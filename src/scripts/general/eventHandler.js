@@ -132,7 +132,8 @@ friendBtn.addEventListener("click", () => { // adds click event to button
     dropDown.addFriendDropDown(); // adds friend names to drop down list
 
     const addFriendBtn = document.getElementById("addFriendBtn"); // queries addFriendBtn located in modal.innerHTML. User will enter value into input fields and use this button to submit data
-    // addFriendBtn.addEventListener("click", valueAndList.friendValueAndList); // pass in function that will get input values and PUT data into database
+    addFriendBtn.addEventListener("click", valueAndList.friendValueAndList); // pass in function that will get input values and PUT data into database
+
 
     let deleteBtn = document.querySelector(".delete"); // queries the '.delete' class attached to the delete button above located in the modal.innerHTML
     deleteBtn.addEventListener("click", () => { // adds click event to button

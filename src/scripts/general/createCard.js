@@ -8,7 +8,7 @@ const $ = require("jquery");
 const CreateCard = Object.create({}, {
     articleCard: {
         value: (username, id, title, summary, url) => {
-
+            debugger
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
@@ -110,6 +110,7 @@ const CreateCard = Object.create({}, {
 
             let editBtn = document.createElement("button");
             editBtn.textContent = "Edit"
+            editBtn.setAttribute("class", "EditTask")
 
             card.appendChild(editBtn)
 

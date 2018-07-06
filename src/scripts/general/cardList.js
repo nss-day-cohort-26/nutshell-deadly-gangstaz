@@ -18,6 +18,7 @@ const CardList = Object.create({}, {
         value: () => {
             saveNload.getEvent()
                 .then(eventData => {
+                    console.log("stff", eventData)
                     clear("#eventContainer")
                     for (let i in eventData) {
                         CreateCard.eventCard("Austin Gorman",eventData[i].name, eventData[i].date, eventData[i].location);
