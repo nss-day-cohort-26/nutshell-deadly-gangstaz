@@ -2,22 +2,10 @@
   "article": [],
   "user": [
     {
-      "name": "Austin fasdf",
-      "email": "austin@gmail.com",
+      "name": "Austin Gorman",
+      "email": "gmail@gmail.com",
       "password": "123",
       "id": 1
-    },
-    {
-      "name": "Sathvik Reddy",
-      "email": "sathvik@gmail.com",
-      "password": "321",
-      "id": 2
-    },
-    {
-      "name": "Natasha Cox",
-      "email": "natasha@gmail.com",
-      "password": "123",
-      "id": 3
     }
   ],
   "event": [
@@ -56,6 +44,16 @@
       "name": "do stuff",
       "dueDate": "2018-07-17",
       "id": 2
+    },
+    {
+      "name": "thing",
+      "dueDate": "2018-07-17",
+      "id": 3
+    },
+    {
+      "name": "",
+      "dueDate": "",
+      "id": 4
     }
   ],
   "friend": []
