@@ -63,6 +63,12 @@
       "date": "",
       "location": "asdf",
       "id": 7
+    },
+    {
+      "name": "stuff",
+      "date": "",
+      "location": "mall",
+      "id": 8
     }
   ],
   "task": [
@@ -85,11 +91,6 @@
       "name": "",
       "dueDate": "",
       "id": 4
-    },
-    {
-      "name": "",
-      "dueDate": "",
-      "id": 5
     }
   ],
   "friend": []
