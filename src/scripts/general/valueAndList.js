@@ -31,6 +31,10 @@ const ValueAndList = Object.create({}, {
             clear("#friendContainer");
             CardList.friendList();
         }
+    },
+    friendValueAndList: {
+        value: () => {
+        }
     }
 })
 
