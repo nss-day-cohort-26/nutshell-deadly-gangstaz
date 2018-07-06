@@ -1,12 +1,13 @@
 let inputValues = require("./getFormVals");
-let CardList = require("./cardList");
 let clear = require("./clearDOM")
+let CardList = require("./cardList");
 
 const ValueAndList = Object.create({}, {
     articleValueAndList: {
         value: () => {
             inputValues.articleValue();
             clear("#articleContainer");
+            // console.log(CardList, "cardlist");
             CardList.articleList();
         }
     },
