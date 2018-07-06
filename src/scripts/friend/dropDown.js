@@ -13,11 +13,11 @@ const dropDown = Object.create({}, {
                         let friendName = `${friends[i].name}`;
                         optionEl.textContent = friendName;
                         optionEl.value = friendName;
+                        document.getElementById("friendDropDown").appendChild(optionEl);
                     }
                 })
         }
     }
 })
 
-
-module.exports = dropDown.addFriendDropDown();
+module.exports = dropDown;

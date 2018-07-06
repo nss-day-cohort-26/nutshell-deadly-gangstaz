@@ -6,6 +6,18 @@
       "email": "gmail@gmail.com",
       "password": "123",
       "id": 1
+    },
+    {
+      "name": "Sathvik Reddy",
+      "email": "sathvik@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "Jewel Ramirez",
+      "email": "jewel@gmail.com",
+      "password": "123",
+      "id": 3
     }
   ],
   "event": [
@@ -32,6 +44,12 @@
       "date": "2018-07-10",
       "location": "Nashville, TN",
       "id": 4
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "id": 5
     }
   ],
   "task": [
