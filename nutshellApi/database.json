@@ -38,18 +38,6 @@
       "date": "",
       "location": "asdf",
       "id": 7
-    },
-    {
-      "name": "asdf",
-      "date": "2018-12-31",
-      "location": "asdf",
-      "id": 8
-    },
-    {
-      "name": "sdfa",
-      "date": "2018-12-31",
-      "location": "asdfasf",
-      "id": 9
     }
   ],
   "task": [
@@ -72,11 +60,6 @@
       "name": "",
       "dueDate": "",
       "id": 4
-    },
-    {
-      "name": "",
-      "dueDate": "",
-      "id": 5
     }
   ],
   "friend": [
