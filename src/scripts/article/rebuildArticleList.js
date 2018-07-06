@@ -9,7 +9,7 @@ articleContainer.addEventListener("click", () => {
   if (event.target.className === "articleRemove") {
 
     let articleId = event.target.parentNode.id;
-    console.log(articleId);
+    // console.log(articleId);
     saveNLoad.deleteArticle(articleId)
       .then(() => {
         CardList.articleList()
@@ -24,6 +24,21 @@ eventContainer.addEventListener("click", () => {
     saveNLoad.deleteEvent(eventId)
       .then(() => {
         CardList.eventList()
+      })
+    }
+    })
+const friendContainer = document.querySelector("#friendContainer");
+// console.log(friendContainer)
+friendContainer.addEventListener("click", () => {
+  // console.log(event.target)
+  if (event.target.className === "friendRemove") {
+
+    let friendId = event.target.parentNode.id;
+    // console.log(friendId, "Friend ID");
+    // console.log(friendId)
+    saveNLoad.deleteUser(friendId)
+      .then(() => {
+        CardList.friendList()
       })
   }
 })
