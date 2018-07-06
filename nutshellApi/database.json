@@ -6,6 +6,18 @@
       "email": "gmail@gmail.com",
       "password": "123",
       "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 3
     }
   ],
   "event": [
@@ -32,6 +44,24 @@
       "date": "2018-07-10",
       "location": "Nashville, TN",
       "id": 4
+    },
+    {
+      "name": "party",
+      "date": "",
+      "location": "out back",
+      "id": 5
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "id": 6
+    },
+    {
+      "name": "stuff",
+      "date": "2018-07-25",
+      "location": "dumpster",
+      "id": 7
     }
   ],
   "task": [
@@ -54,6 +84,16 @@
       "name": "",
       "dueDate": "",
       "id": 4
+    },
+    {
+      "name": "pick up dog poop",
+      "dueDate": "",
+      "id": 5
+    },
+    {
+      "name": "pet puppies",
+      "dueDate": "2018-07-11",
+      "id": 6
     }
   ],
   "friend": []

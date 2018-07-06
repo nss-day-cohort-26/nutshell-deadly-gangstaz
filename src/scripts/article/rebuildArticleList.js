@@ -16,3 +16,14 @@ articleContainer.addEventListener("click", () => {
       })
   }
 })
+const eventContainer = document.querySelector("#eventContainer");
+eventContainer.addEventListener("click", () => {
+  if (event.target.className === "eventRemove") {
+
+    let eventId = event.target.parentNode.id;
+    saveNLoad.deleteEvent(eventId)
+      .then(() => {
+        CardList.eventList()
+      })
+  }
+})
