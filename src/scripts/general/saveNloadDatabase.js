@@ -134,6 +134,7 @@ const Database = Object.create({}, {
   },
   postEvent: {
     value: (eventName, eventDate, eventLocation) => {
+      console.log("things", eventName)
       return $.ajax({
         url: "http://localhost:3000/event",
         method: "POST",

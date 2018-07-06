@@ -4,14 +4,14 @@
 #friendContainer {
     border: 1px solid black;
     border-radius: 20px;
-    height: 650px;
+    height: 675px;
     margin: 0 20px;
   }
 
   #articleContainer {
     border: 1px solid black;
     border-radius: 20px;
-    height: 650px;
+    height: 675px;
   }
 
   .articleCard {
@@ -52,15 +52,14 @@
   #eventContainer {
     border: 1px solid black;
     border-radius: 20px;
-    height: 650px;
+    height: 675px;
     margin-left: 20px;
   }
 
   #taskContainer {
     border: 1px solid black;
     border-radius: 20px;
-    height: 650px;
+    height: 675px;
     margin: 0 20px;
   }
 
- 
