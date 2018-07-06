@@ -44,7 +44,7 @@ const CardList = Object.create({}, {
                     clear("#friendContainer")
                     for (let i in friendData) {
                         // console.log(friendData);
-                        CreateCard.friendCard(friendData[i].name);
+                        CreateCard.friendCard(friendData[i].name, friendData[i].id);
                     }
                 })
         }
