@@ -1,17 +1,14 @@
 // // include checkbox for task card creator
 // let saveNloadDatabase = require("./saveNloadDatabase")
 // let createInputForm = require("./createInputForm")
-const clear = require("./clearDOM")
-const saveNLoad = require("./saveNloadDatabase")
-const CardList = require("./cardList");
-
+// const saveNLoad = require("./saveNloadDatabase");
 
 const $ = require("jquery");
 
 const CreateCard = Object.create({}, {
     articleCard: {
         value: (username, id, title, summary, url) => {
-            clear
+
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
@@ -31,14 +28,7 @@ const CreateCard = Object.create({}, {
 
             let removeBtn = document.createElement("button");
             removeBtn.textContent = "Remove";
-            removeBtn.addEventListener("click", () => {
-                let articleId = event.currentTarget.parentNode.id;
-                console.log(articleId);
-                saveNLoad.deleteArticle(articleId)
-                .then(() => {
-                    console.log("revisit this tomorrow");
-                })
-            }),
+            removeBtn.className =  "articleRemove";
 
             card.appendChild(userEl);
             card.appendChild(titleEl);
