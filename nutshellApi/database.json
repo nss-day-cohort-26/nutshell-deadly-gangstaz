@@ -23,6 +23,12 @@
       "summary": "sujasdf",
       "url": "www.sup.com",
       "id": 4
+    },
+    {
+      "title": "",
+      "summary": "",
+      "url": "",
+      "id": 5
     }
   ],
   "user": [
@@ -69,6 +75,12 @@
       "date": "2018-07-10",
       "location": "Nashville, TN",
       "id": 4
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "id": 5
     }
   ],
   "task": [
@@ -81,6 +93,11 @@
       "name": "do stuff",
       "dueDate": "2018-07-17",
       "id": 2
+    },
+    {
+      "name": "",
+      "dueDate": "",
+      "id": 3
     }
   ],
   "friend": []
