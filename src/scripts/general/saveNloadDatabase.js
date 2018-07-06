@@ -34,6 +34,15 @@ const Database = Object.create({}, {
       })
     }
   },
+  deleteUser: {
+    value: id => {
+      // console.log(id)
+      return $.ajax({
+        url: `http://localhost:3000/user/${id}`,
+        method: "DELETE"
+      })
+    }
+  },
   // ARTICLE data ---------->
   getArticle: {
     value: () => {
@@ -55,6 +64,7 @@ const Database = Object.create({}, {
   },
   deleteArticle: {
     value: id => {
+      console.log(id)
       return $.ajax({
         url: `http://localhost:3000/article/${id}`,
         method: "DELETE"
@@ -98,14 +108,22 @@ const Database = Object.create({}, {
   getFriend: {
     value: () => {
       return $.ajax("http://localhost:3000/friend")
-    },
-    postFriend: {
-        value: (friendName) => {
-        return $.ajax({
-          url: "http://localhost:3000/friend",
-          method: "POST"
-        })
-      }
+    }
+  },
+  postFriend: {
+    value: (friendName) => {
+      return $.ajax({
+        url: "http://localhost:3000/friend",
+        method: "POST"
+      })
+    }
+  },
+  deleteFriend: {
+    value: id => {
+      return $.ajax({
+        url: `http://localhost:3000/friend/${id}`,
+        method: "DELETE"
+      })
     }
   },
   // EVENT data ---------->

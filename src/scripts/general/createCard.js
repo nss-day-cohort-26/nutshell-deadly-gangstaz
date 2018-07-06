@@ -129,10 +129,11 @@ const CreateCard = Object.create({}, {
 
             card.appendChild(nameEl);
 
-            let removeBtn = document.createElement("button");
-            removeBtn.textContent = "Remove";
+            let friendRemoveBtn = document.createElement("button");
+            friendRemoveBtn.textContent = "Remove";
+            friendRemoveBtn.className = "friendRemove";
 
-            card.appendChild(removeBtn);
+            card.appendChild(friendRemoveBtn);
             friendContainer.appendChild(card)
 
             return friendContainer;

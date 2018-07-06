@@ -7,7 +7,7 @@ const dropDown = Object.create({}, {
         value: () => {
             saveNLoad.getUser()
                 .then(friends => {
-                    console.log(friends);
+                    // console.log(friends);
                     for (let i in friends) {
                         let optionEl = document.createElement("option");
                         let friendName = `${friends[i].name}`;
