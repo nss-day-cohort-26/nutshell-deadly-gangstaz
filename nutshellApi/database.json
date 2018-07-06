@@ -8,15 +8,15 @@
       "id": 1
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "Sathvik Reddy",
+      "email": "sathvik@gmail.com",
+      "password": "123",
       "id": 2
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "Jewel Ramirez",
+      "email": "jewel@gmail.com",
+      "password": "123",
       "id": 3
     }
   ],
@@ -46,22 +46,10 @@
       "id": 4
     },
     {
-      "name": "party",
-      "date": "",
-      "location": "out back",
-      "id": 5
-    },
-    {
       "name": "",
       "date": "",
       "location": "",
-      "id": 6
-    },
-    {
-      "name": "stuff",
-      "date": "2018-07-25",
-      "location": "dumpster",
-      "id": 7
+      "id": 5
     }
   ],
   "task": [
