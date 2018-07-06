@@ -99,6 +99,7 @@ const CreateCard = Object.create({}, {
 
             let checkBox = document.createElement("INPUT")
             checkBox.setAttribute("type", "checkbox")
+            checkBox.setAttribute("id", "checkbox")
             let doneTag = document.createElement("p");
             doneTag.textContent = "Done:"
 
@@ -125,7 +126,7 @@ const CreateCard = Object.create({}, {
             let nameEl = document.createElement("h3");
             nameEl.textContent = name;
 
-            card.appendChild(nameEl)
+            card.appendChild(nameEl);
 
             let removeBtn = document.createElement("button");
             removeBtn.textContent = "Remove";

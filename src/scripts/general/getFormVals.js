@@ -1,6 +1,5 @@
 const saveNLoad = require("./saveNloadDatabase")
 
-
 const inputValues = Object.create({}, {
   articleValue: {
     value: () => {
@@ -36,7 +35,11 @@ const inputValues = Object.create({}, {
   },
   friendValue: {
     value: () => {
-      let searchResult = document.querySelector("#friendDropDown").value
+      let searchResult = document.querySelector("#friendDropDown").value;
+      saveNLoad.postFriend(friendName)
+      .then(response => {
+        console.log(response);
+      })
     }
   },
   registerValue: {
