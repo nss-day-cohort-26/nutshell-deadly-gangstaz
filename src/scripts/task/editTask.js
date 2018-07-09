@@ -18,9 +18,9 @@
 
 // const editTask = () => {
 //   const taskId = event.currentTarget.parentNode.id
-//   ContactCollectionModule.getContact(contactId)
+//   database.editTask.(taskId)
 //   .then(() => {
-//     console.log("contact to be edited", response.phone);
+//     console.log("task to be edited");
 //     buildEditContactForm(response)
 //   })
 // }
