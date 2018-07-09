@@ -5,40 +5,15 @@
       "summary": "",
       "url": "",
       "id": 1
-    }
-  ],
-  "user": [
-    {
-      "name": "Hugo",
-      "email": "dog@dog.com",
-      "password": "asdfasfa",
-      "id": 1
     },
     {
-      "name": "Harvey",
-      "email": "smalldog@dog.com",
-      "password": "113eemwdls",
+      "title": "asjkflk",
+      "summary": "kalsjdf",
+      "url": "lkasjdf",
       "id": 2
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 3
-    },
-    {
-      "name": "Natasha Cox",
-      "email": "natasha@gmail.com",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 5
     }
   ],
+  "user": [],
   "event": [
     {
       "name": "NSS Party",
@@ -85,12 +60,13 @@
       "name": "",
       "dueDate": "",
       "id": 4
-    },
-    {
-      "name": "",
-      "dueDate": "",
-      "id": 5
     }
   ],
-  "friend": []
+  "friend": [
+    {
+      "userId": 1,
+      "palId": 2,
+      "id": 1
+    }
+  ]
 }
