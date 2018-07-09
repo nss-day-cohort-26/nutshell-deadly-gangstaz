@@ -29,6 +29,16 @@ const inputValues = Object.create({}, {
       let taskDueDate = document.querySelector("#taskDueDate").value
       saveNLoad.postTask(taskName, taskDueDate)
         .then(response => {
+          // console.log(response)
+        })
+    }
+  },
+  editTaskValue: {
+    value: () => {
+      let editTaskName = document.querySelector("#editTaskName").value
+      // let taskDueDate = document.querySelector("#taskDueDate").value
+      saveNLoad.editTask(editTaskName)
+        .then(response => {
           console.log(response)
         })
     }

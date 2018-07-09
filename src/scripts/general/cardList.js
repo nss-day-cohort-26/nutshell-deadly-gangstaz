@@ -9,7 +9,7 @@ const CardList = Object.create({}, {
                 .then(articleData => {
                     clear("#articleContainer")
                     for (let i in articleData) {
-                        CreateCard.articleCard(articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
+                        CreateCard.articleCard(articleData[i].name, articleData[i].title, articleData[i].summary, articleData[i].url);
                     }
                 })
         }
