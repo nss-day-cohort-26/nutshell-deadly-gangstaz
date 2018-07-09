@@ -9,7 +9,8 @@ const CardList = Object.create({}, {
                 .then(articleData => {
                     clear("#articleContainer")
                     for (let i in articleData) {
-                        CreateCard.articleCard("Natasha Cox", articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
+                        CreateCard.articleCard(articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
+
                     }
                 })
         }
@@ -21,7 +22,9 @@ const CardList = Object.create({}, {
                     console.log("stff", eventData)
                     clear("#eventContainer")
                     for (let i in eventData) {
-                        CreateCard.eventCard("Austin Gorman",eventData[i].name, eventData[i].date, eventData[i].location);
+
+
+                        CreateCard.eventCard("", eventData[i].name, eventData[i].date, eventData[i].location);
                     }
                 })
         }
@@ -32,20 +35,24 @@ const CardList = Object.create({}, {
                 .then(taskData => {
                     clear("#taskContainer")
                     for (let i in taskData) {
-                        CreateCard.taskCard("Jewel Ramirez",taskData[i].name, taskData[i].dueDate);
+
+                        CreateCard.taskCard(taskData[i].id,taskData[i].name, taskData[i].dueDate);
+
                     }
                 })
         }
     },
     friendList: {
         value: () => {
-            saveNload.getUser()
+            saveNload.getFriends()
                 .then(friendData => {
+                    console.log(friendData);
                     clear("#friendContainer")
-                    for (let i in friendData) {
+                    friendData.forEach((i) => {
+                        console.log(i.user)
                         // console.log(friendData);
-                        CreateCard.friendCard(friendData[i].name, friendData[i].id);
-                    }
+                        CreateCard.friendCard(i.user.name, i.id);
+                    })
                 })
         }
     }

@@ -9,7 +9,7 @@ articleContainer.addEventListener("click", () => {
   if (event.target.className === "articleRemove") {
 
     let articleId = event.target.parentNode.id;
-    // console.log(articleId);
+    console.log(articleId);
     saveNLoad.deleteArticle(articleId)
       .then(() => {
         CardList.articleList()
@@ -36,7 +36,7 @@ friendContainer.addEventListener("click", () => {
     let friendId = event.target.parentNode.id;
     // console.log(friendId, "Friend ID");
     // console.log(friendId)
-    saveNLoad.deleteUser(friendId)
+    saveNLoad.deleteFriend(friendId)
       .then(() => {
         CardList.friendList()
       })

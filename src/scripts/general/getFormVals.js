@@ -33,11 +33,6 @@ const inputValues = Object.create({}, {
         })
     }
   },
-  friendValue: {
-    value: () => {
-      let searchResult = document.querySelector("#friendDropDown").value;
-    }
-  },
   registerValue: {
     value: () => {
       let registerName = document.querySelector("#registerName").value;
@@ -47,6 +42,18 @@ const inputValues = Object.create({}, {
       saveNLoad.postUser(registerName, registerEmail, registerPassword)
         .then(response => {
           // console.log(response);
+        })
+    }
+  },
+  friendValue: {
+    value: () => {
+      saveNLoad.getUser()
+        .then(response => {
+          let searchResult = document.querySelector("#friendDropDown").value;
+          saveNLoad.postFriends(1, searchResult)
+            .then(response => {
+              console.log(response);
+            })
         })
     }
   }

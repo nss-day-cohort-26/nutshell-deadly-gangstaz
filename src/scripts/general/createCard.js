@@ -8,7 +8,6 @@ const $ = require("jquery");
 const CreateCard = Object.create({}, {
     articleCard: {
         value: (username, id, title, summary, url) => {
-
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
@@ -75,10 +74,11 @@ const CreateCard = Object.create({}, {
         }
     },
     taskCard: {
-        value: (username, name, dueDate) => {
+        value: (id, username, name, dueDate) => {
             let taskContainer = document.getElementById("taskContainer");
 
             let card = document.createElement("div")
+            card.id = id;
             card.setAttribute("class", "taskCard")
 
             let userEl = document.createElement("h3");
@@ -87,7 +87,6 @@ const CreateCard = Object.create({}, {
             card.appendChild(userEl)
 
             let taskPara = document.createElement("h2");
-            taskPara.id = name;
             taskPara.textContent = name;
             card.appendChild(taskPara)
 
@@ -100,7 +99,7 @@ const CreateCard = Object.create({}, {
             let checkBox = document.createElement("INPUT")
             checkBox.setAttribute("type", "checkbox")
             checkBox.setAttribute("id", "checkbox")
-            let doneTag = document.createElement("p");
+            let doneTag = document.createElement("label");
             doneTag.textContent = "Done:"
 
             checkDiv.appendChild(doneTag)
@@ -110,7 +109,7 @@ const CreateCard = Object.create({}, {
 
             let editBtn = document.createElement("button");
             editBtn.textContent = "Edit"
-            editBtn.setAttribute("class", "EditTask")
+            editBtn.className =  "editTask"
 
             card.appendChild(editBtn)
 
@@ -139,7 +138,6 @@ const CreateCard = Object.create({}, {
             return friendContainer;
         }
     }
-
 })
 
 module.exports = CreateCard;
