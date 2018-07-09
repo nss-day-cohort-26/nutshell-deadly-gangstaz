@@ -9,7 +9,7 @@ articleContainer.addEventListener("click", () => {
   if (event.target.className === "articleRemove") {
 
     let articleId = event.target.parentNode.id;
-    // console.log(articleId);
+    console.log(articleId);
     saveNLoad.deleteArticle(articleId)
       .then(() => {
         CardList.articleList()
