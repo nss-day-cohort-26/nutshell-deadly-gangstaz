@@ -11,7 +11,7 @@ const Database = Object.create({}, {
   postUser: {
     value: (name, email, password) => {
       return $.ajax({
-        url: "http://localhost:3000/user",
+        url: "http://localhost:3000/users",
         method: "POST",
         data: {
           name: name,
@@ -24,7 +24,7 @@ const Database = Object.create({}, {
   editUser: {
     value: (name, date, location) => {
       return $.ajax({
-        url: "http://localhost:3000/user",
+        url: "http://localhost:3000/users",
         method: "PUT",
         data: {
           name: name,
@@ -38,7 +38,7 @@ const Database = Object.create({}, {
     value: id => {
       // console.log(id)
       return $.ajax({
-        url: `http://localhost:3000/user/${id}`,
+        url: `http://localhost:3000/users/${id}`,
         method: "DELETE"
       })
     }
@@ -92,7 +92,7 @@ const Database = Object.create({}, {
   editTask: {
     value: (id, name, dueDate, dateCompleted, userId) => {
       return $.ajax({
-        url: "http://localhost:3000/task",
+        url: `http://localhost:3000/task/${id}`,
         method: "PUT",
         data: {
           id: id,

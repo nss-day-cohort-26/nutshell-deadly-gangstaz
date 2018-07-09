@@ -9,7 +9,9 @@ const CardList = Object.create({}, {
                 .then(articleData => {
                     clear("#articleContainer")
                     for (let i in articleData) {
-                        CreateCard.articleCard(" ", articleData[i].title, articleData[i].summary, articleData[i].url);
+                      
+                        CreateCard.articleCard(articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
+
                     }
                 })
         }
@@ -21,6 +23,8 @@ const CardList = Object.create({}, {
                     console.log("stff", eventData)
                     clear("#eventContainer")
                     for (let i in eventData) {
+
+
                         CreateCard.eventCard("", eventData[i].name, eventData[i].date, eventData[i].location);
                     }
                 })
@@ -32,7 +36,9 @@ const CardList = Object.create({}, {
                 .then(taskData => {
                     clear("#taskContainer")
                     for (let i in taskData) {
-                        CreateCard.taskCard("", taskData[i].name, taskData[i].dueDate);
+
+                        CreateCard.taskCard(taskData[i].id,taskData[i].name, taskData[i].dueDate);
+
                     }
                 })
         }
