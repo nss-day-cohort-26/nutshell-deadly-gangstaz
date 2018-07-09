@@ -15,30 +15,42 @@
   }
 
   .articleCard {
-    border: 1px solid black;
+    border: 5px solid black;
     width: auto;
     height: 110px;
     text-align: center;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: rgb(200, 240, 213);
   }
 
   .eventCard {
-    border: 1px solid black;
+    border: 5px solid black;
     width: auto;
     height: 130px;
     text-align: center;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: rgb(181, 196, 184);
   }
 
   .taskCard {
-    border: 1px solid black;
+    border: 5px solid black;
     width: auto;
     height: 110px;
     text-align: center;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: rgb(102, 241, 102)
   }
 
   .friendCard {
-    border: 1px solid black;
-    width: auto;
-    height: 50px;
+    border: 5px solid black;
+    width: auto;;
+    height: 60px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: rgb(158, 247, 195);
   }
 
   .checkBox {
