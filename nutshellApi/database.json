@@ -19,6 +19,18 @@
       "email": "sathvik@gmail.com",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "Jewl Ramirez",
+      "email": "jewel@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "Natasha Cox",
+      "email": "natasha@gmail.com",
+      "password": "123",
+      "id": 4
     }
   ],
   "event": [
@@ -56,31 +68,5 @@
       "id": 14
     }
   ],
-  "friend": [
-    {
-      "currentUserId": "1",
-      "userId": "1",
-      "id": 1
-    },
-    {
-      "currentUserId": "1",
-      "userId": "2",
-      "id": 2
-    },
-    {
-      "currentUserId": "1",
-      "userId": "2",
-      "id": 3
-    },
-    {
-      "currentUserId": "1",
-      "userId": "1",
-      "id": 4
-    },
-    {
-      "currentUserId": "1",
-      "userId": "2",
-      "id": 5
-    }
-  ]
+  "friend": []
 }
