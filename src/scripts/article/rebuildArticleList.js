@@ -36,7 +36,7 @@ friendContainer.addEventListener("click", () => {
     let friendId = event.target.parentNode.id;
     // console.log(friendId, "Friend ID");
     // console.log(friendId)
-    saveNLoad.deleteUser(friendId)
+    saveNLoad.deleteFriend(friendId)
       .then(() => {
         CardList.friendList()
       })

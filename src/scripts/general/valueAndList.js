@@ -29,7 +29,7 @@ const ValueAndList = Object.create({}, {
     registerValueAndList: {
         value: () => {
             inputValues.registerValue();
-            clear("#friendContainer");
+            // clear("#friendContainer");
             // CardList.friendList();
         }
     },

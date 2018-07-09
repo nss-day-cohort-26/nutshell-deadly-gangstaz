@@ -11,8 +11,9 @@ const dropDown = Object.create({}, {
                     for (let i in friends) {
                         let optionEl = document.createElement("option");
                         let friendName = `${friends[i].name}`;
+                        let friendId = `${friends[i].id}`;
                         optionEl.textContent = friendName;
-                        optionEl.value = friendName;
+                        optionEl.value = friendId;
                         document.getElementById("friendDropDown").appendChild(optionEl);
                     }
                 })

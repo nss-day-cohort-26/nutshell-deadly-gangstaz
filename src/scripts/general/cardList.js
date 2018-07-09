@@ -39,13 +39,15 @@ const CardList = Object.create({}, {
     },
     friendList: {
         value: () => {
-            saveNload.getUser()
+            saveNload.getFriends()
                 .then(friendData => {
+                    console.log(friendData);
                     clear("#friendContainer")
-                    for (let i in friendData) {
+                    friendData.forEach((i) => {
+                        console.log(i.user)
                         // console.log(friendData);
-                        CreateCard.friendCard(friendData[i].name, friendData[i].id);
-                    }
+                        CreateCard.friendCard(i.user.name, i.id);
+                    })
                 })
         }
     }
