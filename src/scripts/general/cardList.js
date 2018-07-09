@@ -9,7 +9,6 @@ const CardList = Object.create({}, {
                 .then(articleData => {
                     clear("#articleContainer")
                     for (let i in articleData) {
-                      
                         CreateCard.articleCard(articleData[i].id, articleData[i].title, articleData[i].summary, articleData[i].url);
 
                     }
@@ -45,13 +44,10 @@ const CardList = Object.create({}, {
     },
     friendList: {
         value: () => {
-            saveNload.getFriends()
+            saveNload.getFriends(1)
                 .then(friendData => {
-                    console.log(friendData);
-                    clear("#friendContainer")
-                    friendData.forEach((i) => {
-                        console.log(i.user)
-                        // console.log(friendData);
+                    friendData.forEach(i => {
+                        console.log(i);
                         CreateCard.friendCard(i.user.name, i.id);
                     })
                 })

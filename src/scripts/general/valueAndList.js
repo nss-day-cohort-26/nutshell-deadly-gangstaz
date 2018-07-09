@@ -7,7 +7,6 @@ const ValueAndList = Object.create({}, {
         value: () => {
             inputValues.articleValue();
             clear("#articleContainer");
-            // console.log(CardList, "cardlist");
             CardList.articleList();
         }
     },
@@ -29,8 +28,6 @@ const ValueAndList = Object.create({}, {
     registerValueAndList: {
         value: () => {
             inputValues.registerValue();
-            // clear("#friendContainer");
-            // CardList.friendList();
         }
     },
     friendValueAndList: {

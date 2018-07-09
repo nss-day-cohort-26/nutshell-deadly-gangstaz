@@ -5,7 +5,7 @@ const Database = Object.create({}, {
   // USER data ---------->
   getUser: {
     value: () => {
-      return $.ajax("http://localhost:3000/user");
+      return $.ajax("http://localhost:3000/users");
     }
   },
   postUser: {

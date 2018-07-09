@@ -120,6 +120,7 @@ const CreateCard = Object.create({}, {
     },
     friendCard: {
         value: (name, id) => {
+            let friendContainer = document.getElementById("friendContainer")
             let card = document.createElement("div");
             card.setAttribute("class", "friendCard");
             card.id = id;
