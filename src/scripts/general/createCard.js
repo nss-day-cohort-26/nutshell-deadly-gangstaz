@@ -119,10 +119,10 @@ const CreateCard = Object.create({}, {
         }
     },
     friendCard: {
-        value: name => {
+        value: (name, id) => {
             let card = document.createElement("div");
             card.setAttribute("class", "friendCard");
-
+            card.id = id;
             let nameEl = document.createElement("h3");
             nameEl.textContent = name;
 
