@@ -105,20 +105,24 @@ const Database = Object.create({}, {
     }
   },
   // FRIEND data ---------->
-  getFriend: {
-    value: () => {
-      return $.ajax("http://localhost:3000/friend")
+  getFriends: {
+    value: id => {
+      return $.ajax(`http://localhost:3000/friend?currentUserId=${id}&_expand=user`)
     }
   },
-  postFriend: {
-    value: (friendName) => {
+  postFriends: {
+    value: (userId, palId) => {
       return $.ajax({
         url: "http://localhost:3000/friend",
-        method: "POST"
+        method: "POST",
+        data: {
+          currentUserId: userId,
+          userId: palId
+        }
       })
     }
   },
-  deleteFriend: {
+  deleteFriends: {
     value: id => {
       return $.ajax({
         url: `http://localhost:3000/friend/${id}`,

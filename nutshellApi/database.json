@@ -1,19 +1,26 @@
 {
   "article": [
     {
-      "title": "",
-      "summary": "",
-      "url": "",
+      "title": "News ",
+      "summary": "this is news",
+      "url": "www.fox.com",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "Austin Gorman",
+      "email": "austin@gmail.com",
+      "password": "123",
       "id": 1
     },
     {
-      "title": "asjkflk",
-      "summary": "kalsjdf",
-      "url": "lkasjdf",
+      "name": "Sathvik Reddy",
+      "email": "sathvik@gmail.com",
+      "password": "123",
       "id": 2
     }
   ],
-  "user": [],
   "event": [
     {
       "name": "NSS Party",
@@ -38,6 +45,12 @@
       "date": "",
       "location": "asdf",
       "id": 7
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "id": 8
     }
   ],
   "task": [
@@ -64,9 +77,29 @@
   ],
   "friend": [
     {
-      "userId": 1,
-      "palId": 2,
+      "currentUserId": "1",
+      "userId": "1",
       "id": 1
+    },
+    {
+      "currentUserId": "1",
+      "userId": "2",
+      "id": 2
+    },
+    {
+      "currentUserId": "1",
+      "userId": "2",
+      "id": 3
+    },
+    {
+      "currentUserId": "1",
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "currentUserId": "1",
+      "userId": "2",
+      "id": 5
     }
   ]
 }

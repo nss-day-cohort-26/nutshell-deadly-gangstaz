@@ -8,7 +8,6 @@ const $ = require("jquery");
 const CreateCard = Object.create({}, {
     articleCard: {
         value: (username, id, title, summary, url) => {
-
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
@@ -139,7 +138,6 @@ const CreateCard = Object.create({}, {
             return friendContainer;
         }
     }
-
 })
 
 module.exports = CreateCard;
