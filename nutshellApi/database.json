@@ -1,12 +1,5 @@
 {
-  "article": [
-    {
-      "title": "News ",
-      "summary": "this is news",
-      "url": "www.fox.com",
-      "id": 1
-    }
-  ],
+  "article": [],
   "users": [
     {
       "name": "Austin Gorman",
