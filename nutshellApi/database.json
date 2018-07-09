@@ -39,52 +39,23 @@
       "date": "2018-07-12",
       "location": "Nashville, TN",
       "id": 1
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "id": 6
-    },
-    {
-      "name": "aljdfa;l",
-      "date": "",
-      "location": "asdf",
-      "id": 7
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "id": 8
     }
   ],
   "task": [
     {
-      "name": "Do Homework",
+      "name": "what'",
       "dueDate": "2018-07-11",
-      "id": 1
+      "id": 10
     },
     {
-      "name": "do stuff",
-      "dueDate": "2018-07-17",
-      "id": 2
+      "name": "ghosts",
+      "dueDate": "2018-07-12",
+      "id": 11
     },
     {
-      "name": "thing",
-      "dueDate": "2018-07-17",
-      "id": 3
-    },
-    {
-      "name": "",
-      "dueDate": "",
-      "id": 4
+      "name": "ghosts in the machine",
+      "dueDate": "2018-07-12",
+      "id": 12
     }
   ],
   "friend": []

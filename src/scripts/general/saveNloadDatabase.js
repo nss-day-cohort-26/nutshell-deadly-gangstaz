@@ -92,7 +92,7 @@ const Database = Object.create({}, {
   editTask: {
     value: (id, name, dueDate, dateCompleted, userId) => {
       return $.ajax({
-        url: "http://localhost:3000/task",
+        url: `http://localhost:3000/task/${id}`,
         method: "PUT",
         data: {
           id: id,
