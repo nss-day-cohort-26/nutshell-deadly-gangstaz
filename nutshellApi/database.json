@@ -1,5 +1,18 @@
 {
-  "article": [],
+  "article": [
+    {
+      "title": "asdfkjsal",
+      "summary": "",
+      "url": "",
+      "id": 1
+    },
+    {
+      "title": "ljsadf",
+      "summary": ";kjasdf",
+      "url": ";adjksf",
+      "id": 2
+    }
+  ],
   "users": [
     {
       "name": "Austin Gorman",
@@ -61,5 +74,21 @@
       "id": 14
     }
   ],
-  "friend": []
+  "friend": [
+    {
+      "currentUserId": "1",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "currentUserId": "1",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "currentUserId": "1",
+      "userId": "4",
+      "id": 3
+    }
+  ]
 }
