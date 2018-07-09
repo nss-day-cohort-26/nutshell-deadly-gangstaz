@@ -111,7 +111,7 @@ const Database = Object.create({}, {
     }
   },
   postFriend: {
-    value: (friendName) => {
+    value: name => {
       return $.ajax({
         url: "http://localhost:3000/friend",
         method: "POST"

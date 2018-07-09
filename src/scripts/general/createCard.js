@@ -8,7 +8,6 @@ const $ = require("jquery");
 const CreateCard = Object.create({}, {
     articleCard: {
         value: (username, id, title, summary, url) => {
-            debugger
             const articleContainer = document.querySelector("#articleContainer");
 
             let card = document.createElement("div");
