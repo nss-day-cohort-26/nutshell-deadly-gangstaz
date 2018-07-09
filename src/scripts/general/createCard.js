@@ -138,7 +138,6 @@ const CreateCard = Object.create({}, {
             return friendContainer;
         }
     }
-
 })
 
 module.exports = CreateCard;
